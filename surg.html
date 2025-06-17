@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <title>Doctors</title>
+    <style>
+      @media(max-width:768px){
+       .top {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    position: absolute;
+     top: 8vh;
+    right: 2vw;
+     padding:1vw; 
+    border-radius: 5px;
+    width: 35vw;
+  }
+
+  .top.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .word{
+     padding-top: 20vh;
+    /* padding-left: 40px; */
+     font-family: 'Customfont2',sans-serif;
+    font: bolder;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .butt4,.butt,.butt2,.butt3{
+     padding: 3.4vw 4vw;
+    border-radius: 40px;
+       font-family:'Customfont1',sans-serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+  }
+    .img{
+     height: 55vw;
+   
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img:hover{
+    transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Even stronger shadow on hover */
+}
+
+#sec2{
+        padding-top: 0px;
+        margin-top: 0px;
+         height: 250vh; 
+         background-color: white;
+    }
+    .header1{
+         font-family:'Customfont1',sans-serif ;
+         margin-bottom: 0px;
+         font-size: 2rem;
+         font-weight: 600;
+    }
+    .header2{
+         font-family:'Customfont1',sans-serif ;
+         font-size: 2rem;
+         margin-top: 0px;
+         font-weight: 600;
+    }
+   
+    .container2{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-family:'Customfont1',sans-serif ;
+     }
+     .dep{
+    font-family:'Customfont2',sans-serif ;
+    text-align: center;
+    font-size: 7rem;
+}
+ .rom1{
+     width: 100%;
+    
+    text-align: center;
+ }
+ .rom1 img{
+    height: 45vw;
+ }
+
+ .rom2{
+    text-align: center;
+     width: 100%;
+ }
+ .rom2 img{
+    height: 45vw;
+    border-radius: 10px;
+   
+ }
+ .rom2 a{
+    
+     text-decoration: none;
+     color: black; 
+     /* padding-top: 20px; */
+ }
+ .rom3{
+     width: 100%;
+     text-align: center;
+ }
+ .rom3 img{
+    height: 45vw;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .rom3 a{
+     text-decoration: none;
+     color: black;
+ }
+ #container{
+    padding-left: 10px;
+    padding-right:10px ;
+    color: black;
+
+    height: 124vh;
+    margin: 2vw;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+
+    }
+    .row1{
+       width: 100%;
+       text-align: center;
+    }
+    .row1 h1{
+        font-family: 'Customfont2',sans-serif;
+        font-size: 7rem;
+        
+    }
+    
+     .row2{
+        width: 70vw;
+        /* margin-left:35vw ;
+        margin-right: 15vw ; */
+        padding-top: 10px;
+          font-family:'Customfont1',sans-serif ;
+       font-weight: 700;
+       font-size: 2rem;
+       background-color: white;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vw;
+      border-radius: 25px;
+    }
+
+    
+    .marq{
+        padding: 1.3vw;
+    }
+  }
+   @media (max-width:768px) and (max-height:700px) {
+      #sec2{
+       
+         height: 300vh; 
+        
+     } 
+    }
+    @media (max-width: 480px) {
+  .toppage{
+    height: 110vh;
+  }
+  .top {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    position: absolute;
+     top: 8vh;
+    right: 2vw;
+     padding:2vw; 
+    border-radius: 5px;
+    width: 45vw;
+  }
+.top a{
+   font-size: 1.2rem;
+   padding-top: 1vh;
+}
+  .top.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding-top: 2vh;
+  }
+  .dropdown{
+    height: 13vw;
+   /* justify-content: flex-end; */
+}
+  .word{
+     padding-top: 15vh;
+    /* padding-left: 40px; */
+     font-family: 'Customfont2',sans-serif;
+    font: bolder;
+    font-size: 7vw;
+    text-align: center;
+  }
+  .butt4,.butt,.butt2,.butt3{
+     padding: 3.5vw 3.8vw;
+    border-radius: 30px;
+       font-family:'Customfont1',sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+     .img{
+     height: 65vw;
+   
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img:hover{
+    transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Even stronger shadow on hover */
+}
+
+#sec2{
+        padding-top: 0px;
+        margin-top: 0px;
+         height: 210vh; 
+         background-color: white;
+    }
+    .header1{
+         font-family:'Customfont1',sans-serif ;
+         margin-bottom: 0px;
+         font-size: 2rem;
+         font-weight: 600;
+    }
+    .header2{
+         font-family:'Customfont1',sans-serif ;
+         font-size: 2rem;
+         margin-top: 0px;
+         font-weight: 600;
+    }
+   
+    .container2{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-family:'Customfont1',sans-serif ;
+     }
+     .dep{
+    font-family:'Customfont2',sans-serif ;
+    text-align: center;
+    font-size: 5rem;
+}
+ .rom1{
+     width: 100%;
+    
+    text-align: center;
+ }
+ .rom1 img{
+    height: 65vw;
+ }
+
+ .rom2{
+    text-align: center;
+     width: 100%;
+ }
+ .rom2 img{
+    height: 65vw;
+    border-radius: 10px;
+   
+ }
+ .rom2 a{
+    
+     text-decoration: none;
+     color: black; 
+     /* padding-top: 20px; */
+ }
+ .rom3{
+     width: 100%;
+     text-align: center;
+ }
+ .rom3 img{
+    height: 65vw;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .rom3 a{
+     text-decoration: none;
+     color: black;
+ }
+ #container{
+    padding-left: 10px;
+    padding-right:10px ;
+    color: black;
+
+    height: 120vh;
+    margin: 2vw;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+
+    }
+    .row1{
+       width: 100%;
+       text-align: center;
+    }
+    .row1 h1{
+        font-family: 'Customfont2',sans-serif;
+        font-size: 5rem;
+        
+    }
+    
+     .row2{
+        width: 90vw;
+        /* margin-left:35vw ;
+        margin-right: 15vw ; */
+        padding-top: 15px;
+          font-family:'Customfont1',sans-serif ;
+       font-weight: 700;
+       font-size: 2rem;
+       background-color: white;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130vw;
+      border-radius: 25px;
+    }
+
+    
+    .marq{
+        padding: 1.3vw;
+    }
+    footer{
+    /* margin-top: 10px; */
+    height: 21vh;
+}
+.container34{
+        font-weight: 900;
+        font-family: 'Customfont1',sans-serif;
+    font-size: 0.7rem;
+    }
+    .rome4 img{
+ height: 5vw;
+}
+     }  
+      @media (max-width:480px) and (max-height:700px) {
+      #sec2{
+       
+         height: 230vh; 
+       
+     } 
+     .row1 h1{
+      font-size: 4rem;
+     }
+     .row2{
+      height: 90vh;
+     }
+    }
+      </style>
+</head>
+<body style="padding: 0; margin: 0;">
+   <div class="toppage">
+    <div class="top" id="top">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+       <img class="dropdown"  src="newmenu.png">
+    </div>
+    <div class="word">
+    <h1 >UnitedHealth Surgeons</h1>
+    <p >Home of the best Healthcare consultants</p>
+ 
+    <button class="butt4"><a href="#sec2">Get started</a></button>
+    </div>
+</div>
+       <div  id="sec2">
+        <h2 class="dep">THE DEPARTMENT</h2>
+      <center><img src="surg3.jpeg" class="img" alt="Doctor Image">
+              <h2  class="header1">Head of department</h2>
+              <h2 class="header2" style="margin-top: 0px;">Dr Donald boyce</h2>
+      </center>  
+    <div class= "container2" >
+        <div class="rom1">
+         <center><img src="surg1.jpeg"></center>   
+           <h3  class="header2">Dr Ben Johnson</h3>
+        </div>
+        <div class="rom2">
+          <center><img src="surg2.jpeg"></center>  
+            <h3  class="header2">Dr Anita Ajayi</h3>
+        </div>
+        <div class="rom3">
+          <center><img src="surg4.jpeg"></center>  
+            <h3  class="header2">Dr Candace Jones<h3>
+        </div>
+       
+    </div>
+      </div>
+     <div id="container">
+        <div class="row1">
+            <h1>BOOK APPOINTMENT</h1>
+        </div>
+        <div class="row2" >
+            <div class="marquee">
+              <!-- <h2 class="marq">Head of the Department</h2>
+              <h3 class="marq">Dr. Jim Yong is the head of the medical doctor department</h3>
+              <p id="parg" class="marq">Dr. Jim Yong has over two decades of extensive experience in the medical practitioner field,<br> specializing in patient care, innovative treatments, and leadership in healthcare management.<br> His dedication to advancing medical practices and mentoring young professionals has earned him <br>recognition as a highly respected figure in the industry."</p> -->
+               <form >
+              <label>Name</label><br>
+              <input type="name" class="marq" id="name"><br>
+              <label>Phone Number</label><br>
+              <input type="number" class="marq"  id="num"><br>
+               <label>Date</label><br>
+              <input type="date"  class="marq" ><br>
+              <label>Notes</label><br>
+              <textarea style="padding: 3vw;"></textarea><br>
+              <input type="submit" class="butt4"><br>
+            </form>
+            </div>
+          </div>
+   
+    </div>
+    
+      <footer>
+  <div class="container34">
+    <div class="rome1">
+       <h5> UnitedGroup Healthcare</h5>
+       <h5>1800 Orleans Street, Baltimore, MD 21287</h5>
+       <h5>2024 Unitedgroup</h5>
+    </div>
+    <div class="rome2">
+      <h2>Links</h2>
+      <a href="index.html"><h4>Home</h4></a>
+        <a href="aboutus.html"><h4>About us</h4></a>
+        <a href="Contactus.html"><h4>Contact Us</h4></a>
+    </div>
+    <div class="rome3">
+      <h2>Services</h2>
+      <a href="doctor.html"><h4>Doctors</h4></a>
+      <a href="surg.html"><h4>Surgeons</h4></a>
+      <a href="thera.html"><h4>Therapists</h4></a>
+    </div>
+    <div class="rome4">
+      <h2>Media</h2>
+      <img src="igicon.png">
+      <img src="facebook logo.png">
+      <img src="mail logo.png">
+    </div>
+
+  </div>
+  
+</footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('top');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+      </script>
+    
+    
+</body>
+</html>

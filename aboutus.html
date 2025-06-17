@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" type="text/css" href="style5.css">
+    <title>About Us</title>
+</head>
+<body>
+    
+<style>
+   @media(max-width:768px){
+       .top {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    color: white;
+        position: absolute;
+     top: 8vh;
+    right: 2vw;
+     padding:1vw; 
+    border-radius: 5px;
+    width: 35vw;
+  }
+  .top a{
+    color: white;
+  }
+
+  .top.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .word{
+     padding-top: 5vh;
+    /* padding-left: 40px; */
+     font-family: 'Customfont2',sans-serif;
+    font: bolder;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .butt4,.butt,.butt2,.butt3{
+     /* padding: 3.4vw 4vw; */
+    border-radius: 40px;
+       font-family:'Customfont1',sans-serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+  }
+ 
+  .sec2{
+        padding-top: 0px;
+        margin-top: 0px;
+         height: 230vh; 
+  }
+    .container2{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-family:'Customfont1',sans-serif ;
+        font-size: 1.7rem;
+     }
+     .dep{
+    font-family:'Customfont2',sans-serif ;
+    text-align: center;
+    font-size: 7rem;
+}
+ .rom1{
+     width: 100%;
+    
+    text-align: center;
+ }
+ .rom1 img{
+    height: 45vw;
+ }
+
+ .rom2{
+    text-align: center;
+     width: 100%;
+     padding-top: 1vh;
+ }
+ .rom2 img{
+    height: 45vw;
+    border-radius: 10px;
+   
+ }
+ .rom2 a{
+    
+     text-decoration: none;
+     color: black; 
+     /* padding-top: 20px; */
+ }
+ .rom3{
+     width: 100%;
+     padding-top: 1vh;
+     text-align: center;
+ }
+ .rom3 img{
+    height: 45vw;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .rom3 a{
+     text-decoration: none;
+     color: black;
+ }
+ button .righticon{
+    height: 2vw;
+    box-shadow: 0px;
+    vertical-align: middle;
+ }
+}
+  @media (max-width:768px) and (max-height:700px) {
+      #sec2{
+       
+         height: 300vh; 
+        
+     } 
+    }
+
+
+@media (max-width:768px) and (max-height:700px){
+  .sec2{
+        padding-top: 0px;
+        margin-top: 0px;
+         height: 260vh; 
+  }
+  section{
+    background-color: white;
+    height: 150vh;
+}
+}
+@media (max-width:480px){
+   
+  .toppage{
+    height: 110vh;
+  }
+  .top {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    position: absolute;
+     top: 8vh;
+    right: 1vw;
+     padding:2vw 1vw; 
+    border-radius: 5px;
+    width: 45vw;
+  }
+.top a{
+   font-size: 1.2rem;
+   padding-top: 1vh;
+}
+  .top.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding-top: 2vh;
+  }
+  .dropdown{
+    height: 13vw;
+   /* justify-content: flex-end; */
+}
+  .word{
+     padding-top: 20vh;
+    /* padding-left: 40px; */
+     font-family: 'Customfont2',sans-serif;
+    font: bolder;
+    font-size: 10vw;
+    text-align: center;
+  }
+  .butt4,.butt,.butt2,.butt3{
+     padding: 3.5vw 3.8vw;
+    border-radius: 30px;
+       font-family:'Customfont1',sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+
+.sec2{
+        padding-top: 0px;
+        margin-top: 0px;
+         height: 180vh; 
+  }
+    .container2{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-family:'Customfont1',sans-serif ;
+        font-size: 1.7rem;
+     }
+     .dep{
+    font-family:'Customfont2',sans-serif ;
+    text-align: center;
+    font-size: 4rem;
+}
+ .rom1{
+     width: 100%;
+    
+    text-align: center;
+ }
+ .rom1 img{
+    height: 65vw;
+ }
+
+ .rom2{
+    text-align: center;
+     width: 100%;
+     padding-top: 1vh;
+ }
+ .rom2 img{
+    height: 65vw;
+    border-radius: 10px;
+   
+ }
+ .rom2 a{
+    
+     text-decoration: none;
+     color: black; 
+     /* padding-top: 20px; */
+ }
+ .rom3{
+     width: 100%;
+     padding-top: 1vh;
+     text-align: center;
+ }
+ .rom3 img{
+    height: 65vw;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .rom3 a{
+     text-decoration: none;
+     color: black;
+ }
+ button .righticon{
+    height: 2vw;
+    box-shadow: 0px;
+    vertical-align: middle;
+ }
+ .words{
+  
+    font-size: 5rem;
+     
+}
+section{
+    background-color: white;
+    height: 160vh;
+}
+section p{
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+}
+ .history{
+ display: flex;
+ float:none;
+  justify-content: center;
+    align-items: center;
+ }
+ 
+.aboutimg{
+    height: 50vw; 
+    float:none; 
+    margin-right: 10px;  
+    padding-bottom: 0px;
+   /* width: 90%; */
+   
+}
+button .righticon{
+    height: 9vw;
+    box-shadow: 0px;
+    vertical-align: middle;
+ }
+   footer{
+    /* margin-top: 10px; */
+    height: 21vh;
+}
+.container34{
+        font-weight: 700;
+        font-family: 'Customfont1',sans-serif;
+    font-size: 0.7rem;
+    }
+    .rome4 img{
+ height: 5vw;
+}
+@media (max-width:480px) and (max-height:700px){
+  .sec2{
+        padding-top: 0px;
+        margin-top: 0px;
+         height: 210vh; 
+  }
+  section{
+    background-color: white;
+    height: 180vh;
+}
+}
+}
+</style>
+ <div class="toppage">
+    <div class="top" id="top">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+       <img class="dropdown"  src="bigblackmenuicon.png">
+    </div>
+    <div class="word">
+    <h1 >ABOUT US</h1>
+    <p >Learning the united group heritage........</p>
+    </div>
+ </div>
+<section>
+    <h1 class="words">OUR HISTORY</h1>
+   
+         <div class="history">
+           <img class="aboutimg" src="sectiomimg3.jpg">
+       </div>
+    <p>
+        United Group Healthcare was founded in 1984 with a vision to revolutionize healthcare by providing compassionate, comprehensive, and patient-focused services. Established by a small group of passionate medical professionals, the organization was
+        built on the principles of excellence, accessibility, and innovation.
+
+        In the 1980s, United Group Healthcare emerged as a pioneer in integrating multidisciplinary services under one roof. Starting with a handful of doctors, the group quickly expanded to include skilled surgeons and experienced therapists, creating a robust network of care for diverse medical needs.
+        
+        By the 1990s, the organization had become a trusted name in the community, known for its quality care and patient-first approach. With advancements in medical technology, the group introduced state-of-the-art surgical procedures and therapeutic practices.
+        
+        In the 2000s, United Group Healthcare launched specialized programs to meet evolving patient needs, from preventive care to rehabilitation. The organization remained committed to delivering exceptional care while adapting to the changing healthcare landscape.
+        
+        Today, United Group Healthcare reflects decades of dedication and progress. With a world-class team of medical professionals, we uphold our founding values of compassion, integrity, and innovation, continuing to prioritize the health and well-being of our community.</p>
+</section>
+<div  class="sec2">
+    <h1 class="dep">Head Of Departments</h1>
+<div class= "container2" >
+    <div class="rom1">
+        <img src="doc4.jpeg">
+       <h3 style="margin-top: 0px; margin-bottom: 0px;">Dr. Jim Yong</h3>
+       <button class="butt4" onclick="location.href='doctor.html'">
+       Learn more
+          <img class="righticon" src="newrighticon.png">
+        
+      </button>
+    </div>
+    <div class="rom2">
+        <img src="surg3.jpeg">
+        <h3 style="margin-top: 0px; margin-bottom: 0px;">Dr. Donald Boyce</h3>
+       <button class="butt4" onclick="location.href='surg.html'">
+       Learn more
+          <img class="righticon" src="newrighticon.png">
+        
+      </button>
+    </div>
+    <div class="rom3">
+        <img src="thera4.jpg">
+        <h3 style="margin-top: 0px; margin-bottom: 0px;">Dr. Iman Brar<h3>
+           <button class="butt4" onclick="location.href='thera.html'">
+       Learn more
+          <img class="righticon" src="newrighticon.png">
+        
+      </button>
+    </div>
+   
+</div>
+  </div>
+   <footer>
+  <div class="container34">
+    <div class="rome1">
+       <h5> UnitedGroup Healthcare</h5>
+       <h5>1800 Orleans Street, Baltimore, MD 21287</h5>
+       <h5>2024 Unitedgroup</h5>
+    </div>
+    <div class="rome2">
+      <h2>Links</h2>
+      <a href="index.html"><h4>Home</h4></a>
+        <a href="aboutus.html"><h4>About us</h4></a>
+        <a href="Contactus.html"><h4>Contact Us</h4></a>
+    </div>
+    <div class="rome3">
+      <h2>Services</h2>
+      <a href="doctor.html"><h4>Doctors</h4></a>
+      <a href="surg.html"><h4>Surgeons</h4></a>
+      <a href="thera.html"><h4>Therapists</h4></a>
+    </div>
+    <div class="rome4">
+      <h2>Media</h2>
+      <img  src="igicon.png">
+      <img src="facebook logo.png">
+      <img src="mail logo.png">
+    </div>
+
+  </div>
+  </footer>
+</body>
+<script>
+   const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('top');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+</script>
+</html>
